@@ -1,8 +1,6 @@
 <template>
   <div >
     <h2>Détails : {{ $route.params.id }}</h2>
-    
-   {{ info }}
 
   </div>
 </template>
