@@ -21,7 +21,7 @@
           class="nav-link"
           :to="`/detail/${film.imdbID}`" 
         >
-          Detail
+          Details
         </router-link>
     
   </div>
