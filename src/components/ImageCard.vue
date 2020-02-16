@@ -17,10 +17,6 @@
       {{ film.Year}}
     </div>
 
-    <button @click="handleFavorite(film)">
-      Fav
-    </button>
-
       <router-link
           class="nav-link"
           :to="`/detail/${film.imdbID}`" 
