@@ -21,7 +21,7 @@
           v-for="film in favorites"
           :key="film.imdbID"
         >
-          <ImageCard :film="film" />
+          <ImageCardFavoris :film="film" />
         </div>
       </div>
     </div>
@@ -29,11 +29,11 @@
 </template>
 
 <script>
-import ImageCard from "./../components/ImageCard"
+import ImageCardFavoris from "./../components/ImageCardFavoris"
 export default {
     name: 'Favoris',
     components:{
-        ImageCard
+        ImageCardFavoris
     },
     data() {
         return {
