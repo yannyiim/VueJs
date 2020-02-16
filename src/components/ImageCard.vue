@@ -24,7 +24,7 @@
           Details
         </router-link>
 
-        <button>Ajouter aux favoris</button>
+        <button @click="handleFavorite(film)">Ajouter aux favoris</button>
     
   </div>
 </template>

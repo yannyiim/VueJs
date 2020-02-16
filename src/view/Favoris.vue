@@ -1,41 +1,52 @@
 <template>
-  <div class="hello">
-
+  <div>
+    <h2>Favoris</h2>
     <router-link
+          class="nav-link"
+          to="home"
+        >
+          Vers la liste
+        </router-link>
+
+        <router-link
           class="nav-link"
           to="/"
         >
           Vers le menu
         </router-link>
 
+    <div class="container">
+      <div class="row">
+        <div
+          v-for="film in favorites"
+          :key="film.imdbID"
+        >
+          <ImageCard :film="film" />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 
+import ImageCard from "./../components/ImageCard"
 
 export default {
     name: 'Favoris',
     components:{
+        ImageCard
     },
-    
+    data() {
+        return {
+            favorites: this.$store.getters.favorites ,
+        }
+    },
+    mounted () {
+        console.log(this.$store.getters.favorites)
+    }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+<style>
 </style>

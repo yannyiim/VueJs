@@ -8,6 +8,15 @@
           Vers la liste
         </router-link>
 
+        <router-link
+          class="nav-link"
+          to="../favoris"
+        >
+          Vers les favoris
+        </router-link>
+
+        <button @click="handleFavorite(film)">Ajouter aux favoris</button>
+
     <h2>ID : {{ $route.params.id }}</h2>
 
    <h2>Titre : {{ post.Title }}</h2>
@@ -51,6 +60,7 @@ export default {
                                   console.log(this.post);
                                 })
     },
+    
 }
 
 </script>

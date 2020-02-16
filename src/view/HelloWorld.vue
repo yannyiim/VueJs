@@ -8,6 +8,13 @@
           Vers le menu
         </router-link>
 
+        <router-link
+          class="nav-link"
+          to="favoris"
+        >
+          Vers les favoris
+        </router-link>
+
 <div class="row">
         <div
           v-for="film in info"
