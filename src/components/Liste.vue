@@ -1,5 +1,13 @@
 <template>
   <div >
+
+    <router-link
+          class="nav-link"
+          to="../home"
+        >
+          Vers la liste
+        </router-link>
+
     <h2>ID : {{ $route.params.id }}</h2>
 
    <h2>Titre : {{ post.Title }}</h2>

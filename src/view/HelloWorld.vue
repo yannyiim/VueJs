@@ -1,6 +1,13 @@
 <template>
   <div class="hello">
 
+    <router-link
+          class="nav-link"
+          to="/"
+        >
+          Vers le menu
+        </router-link>
+
 <div class="row">
         <div
           v-for="film in info"
