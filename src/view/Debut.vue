@@ -21,21 +21,11 @@
 </template>
 
 <script>
-
-
 export default {
     name: 'Debut',
     components:{
        
     },
-    data() {
-        return {
-            favorites: this.$store.getters.favorites ,
-        }
-    },
-    mounted () {
-        console.log(this.$store.getters.favorites)
-    }
 }
 </script>
 

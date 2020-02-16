@@ -1,3 +1,4 @@
+  
 <template>
   <div class="hello">
 
@@ -29,10 +30,8 @@
 </template>
 
 <script>
-
 const axios = require('axios').default;
 import ImageCard from "./../components/ImageCard.vue"
-
 export default {
     name: 'HelloWorld',
     components:{

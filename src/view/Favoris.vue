@@ -29,9 +29,7 @@
 </template>
 
 <script>
-
 import ImageCard from "./../components/ImageCard"
-
 export default {
     name: 'Favoris',
     components:{

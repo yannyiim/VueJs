@@ -15,8 +15,6 @@
           Vers les favoris
         </router-link>
 
-        <button @click="handleFavorite(film)">Ajouter aux favoris</button>
-
     <h2>ID : {{ $route.params.id }}</h2>
 
    <h2>Titre : {{ post.Title }}</h2>
@@ -42,11 +40,9 @@
 </template>
 
 <script>
-
 const axios = require('axios').default;
 export default {
     name: 'Liste',
-
      data() {
         return {
             post : null
@@ -62,9 +58,7 @@ export default {
     },
     
 }
-
 </script>
 
 <style scoped>
-
 </style>
