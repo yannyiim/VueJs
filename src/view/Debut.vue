@@ -7,6 +7,13 @@
         >
           Vers la liste
         </router-link>
+
+        <router-link
+          class="nav-link"
+          to="favoris"
+        >
+          Vers les favoris
+        </router-link>
     
 
     
