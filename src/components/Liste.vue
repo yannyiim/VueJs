@@ -5,7 +5,7 @@
    <h2>Titre : {{ post.Title }}</h2>
   <p> Année de sortie : {{ post.Year }}</p>
  <p>Age conseillé : {{ post.Rated }}</p>
-  <p>Date de réalisation : {{ post.Realeased }}</p>
+  <p>Date de réalisation : {{ post.Released }}</p>
   <p>Durée du film : {{ post.Runtime }}</p>
    <p>Genre :{{ post.Genre }}</p>
    <p>Directeur :{{ post.Director }}</p>
